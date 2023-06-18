@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+}
+
+/*ACA INICIA EL CODIGO DEL ENCABEZADO*/
+header{
+    background-color: #f8bcde;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 800;
+}
+
+header img{
+    height: 90%;
+    padding: 8;
+    padding-top: 3;
+    margin-left: 30%;
+}
+
+#reiniciar{
+    background: transparent;
+    border: none;
+    z-index: 800;
+    height: 90%;
+    width: 11%;
+    position: absolute;
+    top: 7px;
+    left: 58px;
+}
+
+#reiniciar:hover{
+    cursor: pointer;
+}
+
+#secciones{
+    display: flex;
+    gap: 1%;
+}
+
+#secciones button{
+    background: #f8bcde;
+    border: none;
+    width: 90;
+    height: 40;
+    text-align: center;
+}
+
+#secciones button:hover{
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+#barra-busqueda input{
+    width: 250%;
+    height: 20%;
+    font-size: 13px;
+}
+
+/*ACA TERMINA EL CODIGO DEL ENCABEZADO*/
+
+
+
+
+/*ACA COMIENZA EL CODIGO DEL MAIN*/
+
+/*Aca empieza el carrusel del imagenes*/
+.carousel-container {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 160px; 
+}
+  
+.carousel-slide {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    transition: transform 2s ease-in-out;
+}
+
+.carousel-slide img{
+    width: 100%;
+    height: 480px;
+}
+/*Aca termina el carrusel del imagenes*/
+
+
+/*Aca comienza las secciones mas vendidos, nuevos productos etc.*/
+#mas-vendidos h1{
+    width: 100%;
+    background: #f8bcde;
+    text-align: center;
+    font-size: 150%;
+}
+
+#contenedor-mas-vendidos, #contenedor-cajas-sorpresa, #contenedor-nuevos-productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#mas-vendidos-uno, #mas-vendidos-dos, #mas-vendidos-tres, #mas-vendidos-cuatro, #cajas-sorpresa-uno, #cajas-sorpresa-dos, #cajas-sorpresa-tres, #nuevos-productos-uno, #nuevos-productos-dos, #nuevos-productos-tres, #nuevos-productos-cuatro{
+    width: 250px;
+    height: 250px;
+}
+
+#mas-vendidos-uno img, #mas-vendidos-dos img, #mas-vendidos-tres img, #mas-vendidos-cuatro img, #cajas-sorpresa-uno img, #cajas-sorpresa-dos img, #cajas-sorpresa-tres img, #nuevos-productos-uno img, #nuevos-productos-dos img, #nuevos-productos-tres img, #nuevos-productos-cuatro img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: solid 1px black;
+}
+
+#mas-vendidos-uno button, #mas-vendidos-dos button, #mas-vendidos-tres button, #mas-vendidos-cuatro button, #cajas-sorpresa-uno button, #cajas-sorpresa-dos button, #cajas-sorpresa-tres button, #nuevos-productos-uno button, #nuevos-productos-dos button, #nuevos-productos-tres button, #nuevos-productos-cuatro button{
+    width: 100%;
+    height: 50;
+    border: none;
+    background: transparent;
+    font-size: 120%;
+}
+
+#mas-vendidos-uno label:hover, #mas-vendidos-dos label:hover, #mas-vendidos-tres label:hover, #mas-vendidos-cuatro label:hover, #cajas-sorpresa-uno label:hover, #cajas-sorpresa-dos label:hover, #cajas-sorpresa-tres label:hover, #nuevos-productos-uno label:hover, #nuevos-productos-dos label:hover, #nuevos-productos-tres label:hover, #nuevos-productos-cuatro label:hover{
+    cursor: pointer;
+    scale: 1.5;
+}
+
+#cajas-sorpresa h1, #nuevos-productos h1{
+    width: 100%;
+    background: #f8bcde;
+    text-align: center;
+    font-size: 150%;
+    margin-top: 10%;
+}
+
+#divisor{
+    background:rgba(247, 207, 229, 0.5);
+    width: 100%;
+    height: 2%;
+    margin-top: 5%;
+}
+
+#publicidad-dos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5% 3% 0% 3%;
+}
+
+#publicidad-dos img{
+    width: 50%;
+    padding-left: 10%;
+}
+
+#publicidad-dos p{
+    font-size: 120%;
+    font-family: 'Heebo', sans-serif;
+    color: black;
+    font-weight: 900;
+}
+/*Aca termina las secciones mas vendidos, nuevos productos etc.*/
+
+/*ACA TERMINA EL CODIGO DEL MAIN*/
+
+
+
+
+/*ACA COMIENZA EL CODIGO DEL FOOTER*/
+footer{
+    background: black;
+    height: 400px;
+    margin-top: 10%;
+}
+
+footer h1{
+    color: white;
+    text-align: center;
+    font-size: 150%;
+}
+
+#contenedor-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+#contenedor-footer div{
+    width: 200px;
+    height: 200px;
+}
+
+#contenedor-footer div img{
+    filter: invert(100%);
+}
+
+#contenedor-footer div h1{
+    font-size: 100%;
+}
+
+#ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#ubicacion img{
+    width: 100px;
+    height: 100px;
+}
+
+#email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#email img{
+    width: 130px;
+    height: 130px;
+}
+
+#telefono{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#telefono img{
+    width: 100px;
+    height: 100px;
+}
+
+#instagram{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#instagram img{
+    width: 100px;
+    height: 100px;
+}
+
+#tiktok{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#tiktok img{
+    width: 100px;
+    height: 100px;
+}
+/*ACA TERMINA EL CODIGO DEL FOOTER*/
+
+
+@media screen and (max-width: 620px) {
+    header {
+    background-color: #f8bcde;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 800;
+    }
+
+    header img{
+        height: 18%;
+        position: relative;
+        left: -95;
+    }
+
+    #reiniciar{
+        width: 257px;
+        height: 47%;
+        top: 40px;
+        left: 77px;
+    }
+
+    #secciones{
+        display: flex;
+        position: relative;
+        top: -1070;
+        gap: 1%;
+        justify-content: center;
+        justify-content: space-between;
+        left: -10;
+        width: 90%;
+    }
+
+    #secciones button{
+        background: #f8bcde;
+        border: none;
+        width: 100%;
+        height: 40;
+        text-align: center;
+    }
+
+    #secciones button:hover{
+        background: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    main{
+        padding-top: 50%;
+    }
+
+    .carousel-container{
+        width: 100%;
+        height: 300px;
+    }
+
+    .carousel-slide {
+        width: 100%;
+        height: 300px;
+    }
+
+    .carousel-slide img{
+        width: 100%;
+        height: 300px;
+    }
+
+    #mas-vendidos div, #cajas-sorpresa div, #nuevos-productos div{
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contenedor-mas-vendidos, #contenedor-cajas-sorpresa, #contenedor-nuevos-productos, #publicidad-dos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contenedor-mas-vendidos div, #contenedor-cajas-sorpresa div, #contenedor-nuevos-productos div{
+        padding: 10% 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer{
+        background: black;
+        height: auto;
+        width: 100%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contenedor-footer{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #contenedor-footer div{
+        width: 40%;
+        display: inline-block;
+        gap: 0;
+        margin: 0 5%;
+    }
+
+    #ubicacion img, #email img, #telefono img, #instagram img, #tiktok img {
+        width: 50%;
+        height: 40%;
+    }
+
+    #ubicacion h1, #email h1, #telefono h1, #instagram h1, #tiktok h1 {
+        width: 100%;
+    }
+
+    #ubicacion , #email , #telefono , #instagram , #tiktok  {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+
+
+
